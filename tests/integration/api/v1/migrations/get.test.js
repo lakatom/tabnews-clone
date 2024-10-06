@@ -13,7 +13,6 @@ test("get to integration/api/v1/migrations must be 200", async () => {
   const responseBody = await response.json();
 
   //o responseBody deve retornar um Array
-  //console.log(responseBody);
   expect(Array.isArray(responseBody)).toBe(true);
   expect(responseBody.length).toBeGreaterThan(0);
 });
